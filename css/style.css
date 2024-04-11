@@ -1,0 +1,48 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Lora", sans-serif;
+    --third-family: "Roboto", sans-serif;
+}
+:root {
+    --background-color: #1E252B;
+    --color-white: #FFFFFF;
+    --color-white-90: #e6e6e6;
+}
+.container{
+    width: 1224px;
+    outline: solid black;
+    margin: 0 auto;
+
+}
+.logo{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 22px;
+    margin-right: 257px;
+    color: var(--color-white-90);
+}
+.flex{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.nav{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.nav-list{
+    display: flex;
+    width: 431px;
+    outline: 2px solid red;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 193px;
+    /* margin-right: 180px; */
+}
+.header-list{
+    display: flex;
+    width: 203px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
