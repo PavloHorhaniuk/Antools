@@ -3,26 +3,35 @@
     --second-family: "Lora", sans-serif;
     --third-family: "Roboto", sans-serif;
 }
+
 :root {
     --background-color: #1E252B;
     --color-white: #FFFFFF;
     --color-white-90: #e6e6e6;
+    --color-button: #FF6E30;
+    --background-form: #283036;
 }
-.container{
+
+.container {
     width: 1224px;
-    outline: solid black;
+    outline: dashed red 1px;
     margin: 0 auto;
 }
-.flex{
+
+.flex {
     display: flex;
     width: 1215px;
-    /* justify-content: space-between; */
+    height: 48px
+        /* justify-content: space-between; */
 }
-.header{
+
+.header {
     padding-top: 27px;
+    padding-bottom: 104px;
     background-color: #1E252B;
 }
-.logo{
+
+.logo-link {
     display: flex;
     font-family: var(--font-family);
     font-weight: 600;
@@ -30,21 +39,17 @@
     margin-right: 257px;
     color: var(--color-white-90);
 }
-.logo::before {
-    width: 20px;
-    margin-right: 21px;
-    background-image: url(../images/logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #1E252B;
-    content: '';
 
+.logo-img {
+    margin-right: 21.37px;
 }
-.nav{
+
+.nav {
     display: flex;
     align-items: center;
 }
-.nav-list{
+
+.nav-list {
     display: flex;
     align-items: center;
     width: 431px;
@@ -53,12 +58,15 @@
     align-items: center;
     margin-right: 193px;
 }
-.nav-list-item{
+
+.nav-link {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
+    color: rgba(255, 255, 255, 0.55);
 }
-.header-list{
+
+.auth-list {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
@@ -68,18 +76,254 @@
     outline: red 2px solid;
     width: 203px;
 }
-.flex-hero{
-    display: flex;
-    /* text-align: left; */
-    width: 600px;
-    outline:  dashed;
-    /* flex-direction: column; */
-    /* align-items: flex-start; */
-    flex-wrap: wrap;
-}
-.hero-titel{
+
+.login-link {
     font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.signup-link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: #fdf5ff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    ;
+    background-color: var(--color-button);
+}
+
+.hero {
+    padding-bottom: 200px;
+    background-color: var(--background-color);
+}
+
+.hero-titel {
+    font-family: var(--font-family);
+    width: 600px;
     font-weight: 500;
     font-size: 50px;
     line-height: 140%;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.point {
+    color: #FF6E30;
+}
+
+.hero-text {
+    width: 487px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 60px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.hero-form {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    width: 497px;
+    height: 64px;
+    padding: 8px 11px 8px 18px;
+    margin-bottom: 110px;
+    background: var(--background-form);
+}
+
+.hero-input {
+    width: 468px;
+    height: 48px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 13.04px;
+    color: rgba(255, 255, 255, 0.38);
+    background-color: var(--background-form);
+    border: none;
+}
+
+.hero-button {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 36.12px;
+    border-radius: 8px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+}
+
+.hero-link-list {
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+    height: 58px;
+}
+
+.hero-link {
+    margin-right: 8px;
+}
+
+.tools {
+    background-color: var(--background-color);
+    padding-bottom: 200px;
+}
+
+.tools-main-titel {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tools-main-text {
+    font-family: var(--font-family);
+    width: 427px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.tools-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.tools-item {
+    width: 326px;
+    height: 228px;
+    flex-basis: calc((100% - 50px)/3);
+    outline: darkblue dashed;
+}
+
+.tools-titel {
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tools-plan-text {
+    flex-direction: column;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 165, 55, 0.55);
+}
+
+.tools-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.tools-item:nth-child(1)::before {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/grommet-icons_figma.png);
+    background-repeat: no-repeat;
+    content: '';
+    margin-right: 30px;
+}
+
+.tools-item:nth-child(2)::before {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/logos_sketch.png);
+    background-repeat: no-repeat;
+    content: '';
+    margin-right: 30px;
+}
+
+.tools-item:nth-child(3)::before {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/logos_visual-studio-code.png);
+    background-repeat: no-repeat;
+    content: '';
+    margin-right: 30px;
+}
+
+.tools-item:nth-child(4)::before {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/notion.png);
+    background-repeat: no-repeat;
+    content: '';
+    margin-right: 30px;
+}
+
+.tools-item:nth-child(5)::before {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/grommet-icons_slack.png);
+    background-repeat: no-repeat;
+    content: '';
+    margin-right: 30px;
+}
+
+.tools-item:nth-child(6)::before {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/logos_invision-icon.png);
+    background-repeat: no-repeat;
+    content: '';
+    margin-right: 30px;
+}
+
+.tools-button {
+    width: 184px;
+    height: 64px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--color-button);
+    background-color: var(--background-color);
+}
+
+.brand {
+    height: 253px;
+    border-radius: 25px;
+    backdrop-filter: blur(50px);
+    background: rgba(44, 53, 61, 0.2);
+    background-color: var(--background-color);
+}
+
+.brand-titel {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
 }
