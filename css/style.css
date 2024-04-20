@@ -208,15 +208,13 @@
 }
 
 .tools-item {
-    width: 326px;
-    height: 228px;
+    width: 392px;
+    height: 294px;
     flex-basis: calc((100% - 50px)/3);
     outline: darkblue dashed;
 }
 
 .tools-titel {
-    flex-direction: column;
-    align-items: center;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 24px;
@@ -224,7 +222,6 @@
 }
 
 .tools-plan-text {
-    flex-direction: column;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
@@ -241,6 +238,7 @@
 
 .tools-item:nth-child(1)::before {
     display: flex;
+    flex-direction: column;
     width: 64px;
     height: 64px;
     background-image: url(../images/grommet-icons_figma.png);
@@ -312,11 +310,18 @@
 }
 
 .brand {
-    height: 253px;
+    padding-bottom: 323px;
+    background-color: var(--background-color);
+}
+
+.flex-brand {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     border-radius: 25px;
+    width: 1224px;
+    height: 253px;
     backdrop-filter: blur(50px);
     background: rgba(44, 53, 61, 0.2);
-    background-color: var(--background-color);
 }
 
 .brand-titel {
@@ -325,5 +330,14 @@
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 24px;
+    pa: px;
+    margin-bottom: 55px                   ;
     color: rgba(255, 255, 255, 0.8);
+}
+
+.brand-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 82px;
+    width: 1059px;
 }
