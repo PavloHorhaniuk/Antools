@@ -220,8 +220,9 @@
     outline: darkblue dashed;
 }
 
-.tools-item:hover {
-    background: rgba(40, 48, 54, 0.6);
+.tools-item,.newcomer-item:hover {
+    background-image: radial-gradient(circle at top right,#3C3432, rgb(40, 48, 54, 0.6) 20%);
+    backdrop-filter: blur(50px);
 }
 
 .tools-titel {
@@ -381,11 +382,12 @@
 .flex-brand {
     /* display: block; */
     /* flex-wrap: wrap; */
-    background-image: radial-gradient(cricle at top left(red rgb(58, 58, 171)));
     border-radius: 25px;
     width: 1224px;
     height: 253px;
-    background: rgba(44, 53, 61, 0.2);
+    background-image: radial-gradient(circle at top left, #4b2f33, rgb(255, 0, 0,0) 12%);
+    backdrop-filter: blur(50px);
+    background-color: rgba(44, 53, 61, 0.2);
 }
 
 .brand-titel {
@@ -410,17 +412,17 @@
     padding-bottom: 77px;
     background-color: var(--background-color);
 }
-/* .newcomer-flex{
-    width: 600px;
+.newcomer-flex{
     display: flex;
-    flex-wrap: wrap;
-} */
+    justify-content: space-between;
+}
 .newcomer-list{
     display: flex;
-    /* justify-content: right; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* gap: 25; */
+    flex-wrap: wrap;
+    width: 600px;
+    height: 638px;
+    column-gap: 24px;
+    row-gap: 50px;
 }
 .newcomer-item {
     display: flex;
@@ -428,7 +430,6 @@
     width: 288px;
     height: 284px;
     border-radius: 15px;
-    /* flex-basis: calc((150% - 50px)/2); */
     outline: darkgreen dashed;
 }
 
@@ -545,6 +546,9 @@
 }
 
 .newcomer-svg-box{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
     width: 245px;
     height: 42px;
     margin-left: 22px;
