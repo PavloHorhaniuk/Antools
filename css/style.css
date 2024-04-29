@@ -11,7 +11,15 @@
     --color-button: #FF6E30;
     --background-form: #283036;
 }
-
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+    
+}
+@media only screen and (min-width: 1025px) {
+    
+}
 .container {
     width: 1224px;
     outline: dashed red 1px;
