@@ -220,7 +220,7 @@
     outline: darkblue dashed;
 }
 
-.tools-item,.newcomer-item:hover {
+.tools-item:hover,.newcomer-item:hover {
     background-image: radial-gradient(circle at top right,#3C3432, rgb(40, 48, 54, 0.6) 20%);
     backdrop-filter: blur(50px);
 }
