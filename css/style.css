@@ -703,7 +703,7 @@
     /* top: 80px; */
     z-index: 1;
 }
-.vector-left{
+/* .vector-left{
     display: flex;
     text-align: center;
     align-items: center;
@@ -716,16 +716,16 @@
     background-image: url(../images/Vector.png);
     background-repeat: no-repeat;
 
-}
-.vector-right{
+} */
+/* .vector-right{
     margin-top: 220px;
     margin-left: 1100px;
     position: absolute;
     width: 48px;
     height: 48px;
     background-image: url(../images/chevron-left.png)
-}
-.after{
+} */
+/* .after{
     position: absolute;
     width: 168px;
     height: 8px;
@@ -733,7 +733,7 @@
     background-image: url(../images/after.png);
     background-repeat: no-repeat;
     background-position: bottom;
-}
+} */
 .work-person {
     font-family: var(--font-family);
     font-weight: 400;
