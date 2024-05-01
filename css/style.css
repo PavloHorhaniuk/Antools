@@ -14,7 +14,6 @@
 
 .container {
     width: 1224px;
-    outline: dashed red 1px;
     margin: 0 auto;
 }
 
@@ -632,39 +631,43 @@
     display: flex;
     justify-content: center;
 }
-.team-box{
+
+.container-team {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .container-team::before {
+    position: absolute;
+    margin-left: 130px;
+    content: '';
+    width: 12px;
+    height: 24px;
+
+    background-image: url(../images/Vector.png);
+    background-position: right;
+    background-repeat: no-repeat;
+} */
+
+.team-box {
     display: flex;
     width: 399px;
     height: 487.08px;
 }
-.team-box::before{
-    content: '';
-    width: 12px;
-    height: 24px;
-    /* margin-right: 130px; */
-    /* background-image: url(../images/Vector.png); */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-}
-.img-team{
+
+.img-team {
     z-index: 1;
 }
-.img-team::before{
-    content: '';
-    width: 12px;
-    height: 24px;
-    /* margin-right: 130px; */
-    background-image: url(../images/Vector.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.radial{
+
+.radial {
     position: absolute;
     width: 380px;
     height: 380px;
     background-image: url(../images/radial.png);
     background-repeat: no-repeat;
 }
+
 .border-person {
     position: absolute;
     margin-top: 357px;
@@ -676,6 +679,7 @@
     background: rgba(40, 48, 54, 0.2);
     z-index: 2;
 }
+
 .name-person {
     font-family: var(--font-family);
     font-weight: 500;
@@ -687,6 +691,49 @@
     color: rgba(255, 253, 253, 0.78);
 }
 
+.coma {
+    position: absolute;
+    width: 103px;
+    height: 317px;
+    margin-top: 70px;
+    margin-left: 55px;
+    background-image: url(../images/“.png);
+    background-repeat: no-repeat;
+    content: '';
+    /* top: 80px; */
+    z-index: 1;
+}
+.vector-left{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+    margin-top: 230px;
+    margin-right: 1100px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/Vector.png);
+    background-repeat: no-repeat;
+
+}
+.vector-right{
+    margin-top: 220px;
+    margin-left: 1100px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/chevron-left.png)
+}
+.after{
+    position: absolute;
+    width: 168px;
+    height: 8px;
+    margin-top: 575px;
+    background-image: url(../images/after.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 .work-person {
     font-family: var(--font-family);
     font-weight: 400;
@@ -695,6 +742,7 @@
     height: 24px;
     color: rgba(255, 253, 253, 0.55);
 }
+
 /* .vector-first{
     display: flex;
     justify-content: left;
